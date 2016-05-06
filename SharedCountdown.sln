@@ -13,6 +13,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedCountdown", "SharedCo
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedCountdown\SharedCountdown\SharedCountdown.projitems*{39c1cf4c-1a51-4bf1-913b-8c35fc018fa5}*SharedItemsImports = 4
+		SharedCountdown\SharedCountdown\SharedCountdown.projitems*{75b7c03d-3185-497e-ad18-f28e977cfdf1}*SharedItemsImports = 4
+		SharedCountdown\SharedCountdown\SharedCountdown.projitems*{ab73b45b-8239-4681-acba-94fb1b79147d}*SharedItemsImports = 4
 		SharedCountdown\SharedCountdown\SharedCountdown.projitems*{533b4609-ab8b-4821-a407-8e6c67d01a0d}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

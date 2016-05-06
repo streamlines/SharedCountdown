@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/root">
+    <CheckedTextView
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/lblName"
+        p1:text="NAME TEXT VIEW"
+        p1:checked="true"
+        p1:checkMark="@android:drawable/btn_star_big_on" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/lblName"
+        p1:id="@+id/lblDate" />
+</RelativeLayout>
