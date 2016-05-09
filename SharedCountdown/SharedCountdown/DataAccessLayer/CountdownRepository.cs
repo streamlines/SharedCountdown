@@ -64,6 +64,10 @@ namespace SharedCountdown.DataAccessLayer
         {
             return me.db.GetItems<Countdown>();
         }
+        public static IEnumerable<Countdown> GetFavouriteCountdowns()
+        {
+            return me.db.GetItems<Countdown>(true);
+        }
 
         public static int SaveCountdown (Countdown item)
         {

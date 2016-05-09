@@ -22,6 +22,11 @@ namespace SharedCountdown.BusinessLayer.Managers
             return new List<Countdown>(DataAccessLayer.CountdownRepository.GetCountdowns());
         }
 
+        public static IList<Countdown> GetFavouriteCountdowns()
+        {
+            return new List<Countdown>(DataAccessLayer.CountdownRepository.GetFavouriteCountdowns());
+        }
+
         public static int SaveCountdown (Countdown item)
         {
             return DataAccessLayer.CountdownRepository.SaveCountdown(item);

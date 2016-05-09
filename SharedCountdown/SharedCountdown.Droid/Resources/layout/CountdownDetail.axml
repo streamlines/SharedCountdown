@@ -48,4 +48,10 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@+id/txtDate"
         p1:id="@+id/btnDateSelect" />
+    <CheckBox
+        p1:text="Favourite"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/btnDateSelect"
+        p1:id="@+id/chkboxFavourite" />
 </RelativeLayout>

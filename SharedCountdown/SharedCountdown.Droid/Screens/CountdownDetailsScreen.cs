@@ -23,6 +23,7 @@ namespace SharedCountdown.Droid.Screens
         protected EditText _notesTextEdit;
         protected EditText _nameTextEdit;
         protected Button _dateSelectButton;
+        protected CheckBox _FavouriteCheckBox;
          
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -42,6 +43,7 @@ namespace SharedCountdown.Droid.Screens
             _notesTextEdit = FindViewById<EditText>(Resource.Id.txtNotes);
             _nameTextEdit = FindViewById<EditText>(Resource.Id.txtName);
             _dateSelectButton = FindViewById<Button>(Resource.Id.btnDateSelect);
+            _FavouriteCheckBox = FindViewById<CheckBox>(Resource.Id.chkboxFavourite);
 
             if(_nameTextEdit != null)
             {
@@ -62,14 +64,38 @@ namespace SharedCountdown.Droid.Screens
                 }
             }
 
+            if(_FavouriteCheckBox != null)
+            {
+                _FavouriteCheckBox.Selected = _countdown.Favourite;
+            }
+
         }
 
         protected void Save()
         {
             _countdown.Name = _nameTextEdit.Text;
             _countdown.Notes = _notesTextEdit.Text;
+            _countdown.Favourite = _FavouriteCheckBox.Selected;
+            if (_countdown.Favourite)
+            {
+                resetFavorites();
+            }
+
             SharedCountdown.BusinessLayer.Managers.CountdownManager.SaveCountdown(_countdown);
             Finish();
+        }
+
+        private void resetFavorites()
+        {
+            IList<Countdown> countdowns = BusinessLayer.Managers.CountdownManager.GetFavouriteCountdowns();
+            if (countdowns.Count > 0)
+            {
+                foreach (Countdown item in countdowns)
+                {
+                    item.Favourite = false;
+                    BusinessLayer.Managers.CountdownManager.SaveCountdown(item);
+                }
+            }
         }
 
         protected void CancelDelete()

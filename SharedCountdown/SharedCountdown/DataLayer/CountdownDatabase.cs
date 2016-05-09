@@ -31,6 +31,16 @@ namespace SharedCountdown.DataLayer
             }
         }
 
+        public IEnumerable<T> GetItems<T>(bool favourite) where T : BusinessLayer.Contracts.IBusinessEntity, new()
+        {
+            lock (locker)
+            {
+                return (from i in Table<T>()
+                        where i.Favourite.Equals(favourite)
+                        select i).ToList();
+            }
+        }
+
         public T GetItem<T> (int id) where T : BusinessLayer.Contracts.IBusinessEntity, new ()
         {
             lock (locker)

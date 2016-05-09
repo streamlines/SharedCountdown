@@ -63,6 +63,13 @@ namespace SharedCountdown.Droid.Adapters
             nameLabel.Text = item.Name;
             nameLabel.Checked = false;
             nameLabel.SetCheckMarkDrawable(null);
+            if (item.Favourite)
+            {
+                nameLabel.Checked = true;
+                // @android:drawable/btn_star_big_on
+                nameLabel.SetCheckMarkDrawable(Android.Resource.Drawable.ButtonStarBigOn);
+            }
+
 
             var dateLabel = view.FindViewById<TextView>(Resource.Id.lblDate);
             dateLabel.Text = item.GetCountdown().ToString("dd") + " Days";
