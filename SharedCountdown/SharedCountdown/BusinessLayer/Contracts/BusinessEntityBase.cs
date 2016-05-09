@@ -15,5 +15,6 @@ namespace SharedCountdown.BusinessLayer.Contracts
         /// </summary>
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+        public bool Favourite { get; set; }
     }
 }

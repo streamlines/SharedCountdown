@@ -16,4 +16,9 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/lblName"
         p1:id="@+id/lblDate" />
+    <Space
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/lblDate"
+        p1:id="@+id/space1" />
 </RelativeLayout>
