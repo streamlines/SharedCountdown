@@ -43,7 +43,7 @@ namespace SharedCountdown.Droid.Screens
         protected override void OnResume()
         {
             base.OnResume();
-            countdowns = SharedCountdown.BusinessLayer.Managers.CountdownManager.GetCountdowns();
+            countdowns = SharedCountdown.BusinessLayer.Managers.CountdownManager.GetCountdowns().OrderBy(o=>o.Date).ToList();
 
             countdownList = new Adapters.CountdownListAdapter(this, countdowns);
             CountdownListView.Adapter = countdownList;
