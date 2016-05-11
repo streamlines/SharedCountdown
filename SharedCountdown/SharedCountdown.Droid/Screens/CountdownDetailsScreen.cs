@@ -75,7 +75,7 @@ namespace SharedCountdown.Droid.Screens
         {
             _countdown.Name = _nameTextEdit.Text;
             _countdown.Notes = _notesTextEdit.Text;
-            _countdown.Favourite = _FavouriteCheckBox.Selected;
+            _countdown.Favourite = _FavouriteCheckBox.Checked;
             if (_countdown.Favourite)
             {
                 resetFavorites();

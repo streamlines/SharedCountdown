@@ -41,11 +41,42 @@ namespace SharedCountdown
 			}
 		}
 		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f060001
+			public const int sc_datefontSize = 2131099649;
+			
+			// aapt resource value: 0x7f060000
+			public const int sc_fontSize = 2131099648;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int widget_bg = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int widget_bg_normal = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int widget_bg_pressed = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int widget_bg_selected = 2130837508;
 			
 			static Drawable()
 			{
@@ -60,53 +91,65 @@ namespace SharedCountdown
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int NameTextView = 2131099649;
+			// aapt resource value: 0x7f09000e
+			public const int CountdownTitle = 2131296270;
 			
-			// aapt resource value: 0x7f060003
-			public const int NotesTextView = 2131099651;
+			// aapt resource value: 0x7f09000f
+			public const int CountdownType = 2131296271;
 			
-			// aapt resource value: 0x7f060006
-			public const int btnDateSelect = 2131099654;
+			// aapt resource value: 0x7f090001
+			public const int NameTextView = 2131296257;
 			
-			// aapt resource value: 0x7f060007
-			public const int chkboxFavourite = 2131099655;
+			// aapt resource value: 0x7f090003
+			public const int NotesTextView = 2131296259;
 			
-			// aapt resource value: 0x7f06000a
-			public const int lblDate = 2131099658;
+			// aapt resource value: 0x7f090006
+			public const int btnDateSelect = 2131296262;
 			
-			// aapt resource value: 0x7f060009
-			public const int lblName = 2131099657;
+			// aapt resource value: 0x7f090007
+			public const int chkboxFavourite = 2131296263;
 			
-			// aapt resource value: 0x7f06000c
-			public const int lstCountdowns = 2131099660;
+			// aapt resource value: 0x7f09000a
+			public const int lblDate = 2131296266;
 			
-			// aapt resource value: 0x7f06000f
-			public const int menu_add_countdown = 2131099663;
+			// aapt resource value: 0x7f090009
+			public const int lblName = 2131296265;
 			
-			// aapt resource value: 0x7f06000e
-			public const int menu_delete_countdown = 2131099662;
+			// aapt resource value: 0x7f09000c
+			public const int lstCountdowns = 2131296268;
 			
-			// aapt resource value: 0x7f06000d
-			public const int menu_save_countdown = 2131099661;
+			// aapt resource value: 0x7f090013
+			public const int menu_add_countdown = 2131296275;
 			
-			// aapt resource value: 0x7f060000
-			public const int relativeLayout1 = 2131099648;
+			// aapt resource value: 0x7f090012
+			public const int menu_delete_countdown = 2131296274;
 			
-			// aapt resource value: 0x7f060008
-			public const int root = 2131099656;
+			// aapt resource value: 0x7f090011
+			public const int menu_save_countdown = 2131296273;
 			
-			// aapt resource value: 0x7f06000b
-			public const int space1 = 2131099659;
+			// aapt resource value: 0x7f090010
+			public const int message = 2131296272;
 			
-			// aapt resource value: 0x7f060005
-			public const int txtDate = 2131099653;
+			// aapt resource value: 0x7f090000
+			public const int relativeLayout1 = 2131296256;
 			
-			// aapt resource value: 0x7f060002
-			public const int txtName = 2131099650;
+			// aapt resource value: 0x7f090008
+			public const int root = 2131296264;
 			
-			// aapt resource value: 0x7f060004
-			public const int txtNotes = 2131099652;
+			// aapt resource value: 0x7f09000b
+			public const int space1 = 2131296267;
+			
+			// aapt resource value: 0x7f090005
+			public const int txtDate = 2131296261;
+			
+			// aapt resource value: 0x7f090002
+			public const int txtName = 2131296258;
+			
+			// aapt resource value: 0x7f090004
+			public const int txtNotes = 2131296260;
+			
+			// aapt resource value: 0x7f09000d
+			public const int widget = 2131296269;
 			
 			static Id()
 			{
@@ -130,6 +173,12 @@ namespace SharedCountdown
 			// aapt resource value: 0x7f030002
 			public const int HomeScreen = 2130903042;
 			
+			// aapt resource value: 0x7f030003
+			public const int widget_countdown = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int widget_message = 2130903044;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -143,11 +192,11 @@ namespace SharedCountdown
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int menu_detailsscreen = 2131034112;
+			// aapt resource value: 0x7f080000
+			public const int menu_detailsscreen = 2131230720;
 			
-			// aapt resource value: 0x7f050001
-			public const int menu_homescreen = 2131034113;
+			// aapt resource value: 0x7f080001
+			public const int menu_homescreen = 2131230721;
 			
 			static Menu()
 			{
@@ -162,11 +211,17 @@ namespace SharedCountdown
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int app_name = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int hello = 2131034112;
+			
+			// aapt resource value: 0x7f050003
+			public const int widget_loading = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int widget_name = 2131034114;
 			
 			static String()
 			{
@@ -174,6 +229,53 @@ namespace SharedCountdown
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f070001
+			public const int BulletPoint = 2131165185;
+			
+			// aapt resource value: 0x7f070002
+			public const int Text = 2131165186;
+			
+			// aapt resource value: 0x7f070004
+			public const int Text_CountdownTitle = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int Text_CountdownType = 2131165189;
+			
+			// aapt resource value: 0x7f070003
+			public const int Text_Loading = 2131165187;
+			
+			// aapt resource value: 0x7f070000
+			public const int WidgetBackground = 2131165184;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
+			{
+			}
+		}
+		
+		public partial class Xml
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int Countdown_Widget = 2130968576;
+			
+			static Xml()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Xml()
 			{
 			}
 		}

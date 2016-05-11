@@ -50,6 +50,8 @@
     <Compile Include="Screens\CountdownDetailsScreen.cs" />
     <Compile Include="Screens\DatePickerFragment.cs" />
     <Compile Include="Screens\HomeScreen.cs" />
+    <Compile Include="Services\CountdownWidget.cs" />
+    <Compile Include="Services\UpdateService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -65,6 +67,12 @@
     <AndroidResource Include="Resources\layout\CountdownListItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\widget_countdown.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\widget_message.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml">
@@ -76,9 +84,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\menu\menu_homescreen.xml">
       <SubType>Designer</SubType>
@@ -88,6 +94,28 @@
     <AndroidResource Include="Resources\menu\menu_detailsscreen.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\Countdown_Widget.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\widget_bg_normal.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\widget_bg_pressed.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\widget_bg_selected.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\widget_bg.xml" />
   </ItemGroup>
   <Import Project="..\SharedCountdown\SharedCountdown.projitems" Label="Shared" Condition="Exists('..\SharedCountdown\SharedCountdown.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />

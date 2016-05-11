@@ -9,16 +9,19 @@
         p1:id="@+id/lblName"
         p1:text="NAME TEXT VIEW"
         p1:checked="true"
-        p1:checkMark="@android:drawable/btn_star_big_on" />
+        p1:checkMark="@android:drawable/btn_star_big_on"
+        p1:textSize="@dimen/sc_fontSize" />
     <TextView
         p1:text="Text"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/lblName"
-        p1:id="@+id/lblDate" />
+        p1:id="@+id/lblDate"
+        p1:textSize="@dimen/sc_datefontSize" />
     <Space
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/lblDate"
-        p1:id="@+id/space1" />
+        p1:id="@+id/space1"
+        p1:layout_margin="10dp" />
 </RelativeLayout>

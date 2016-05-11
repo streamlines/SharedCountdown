@@ -24,7 +24,18 @@ namespace SharedCountdown.BusinessLayer.Managers
 
         public static IList<Countdown> GetFavouriteCountdowns()
         {
-            return new List<Countdown>(DataAccessLayer.CountdownRepository.GetFavouriteCountdowns());
+            var fullList = CountdownRepository.GetCountdowns();
+            List<Countdown> result = new List<Countdown>();
+
+            foreach (Countdown item in fullList)
+            {
+                if (item.Favourite)
+                {
+                    result.Add(item);
+                }
+            }
+
+            return result;
         }
 
         public static int SaveCountdown (Countdown item)
